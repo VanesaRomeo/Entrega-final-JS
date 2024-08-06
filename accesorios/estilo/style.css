@@ -118,7 +118,7 @@ nav {
     gap: 30px;
     height: 90vh;
     overflow-y: scroll;
-    z-index: 2;
+    z-index: 1;
     min-width: 300px;
     transform: scale(0.9);
     opacity: 0;
@@ -256,41 +256,7 @@ color: transparent;
 
   /* main */
 
-
-  .conteiner-home{
-display: flex;
-justify-content: center;
-align-items: center;
-  }
-
-  .noti-heart img{
-width: 500px;
-  }
-
-  .div-hero p{
-    font-size: 25px;
-background: #12c2e9; 
-background: #aa4b6b;  
-background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  
-background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); 
-background-clip: text;
-color: transparent;
--webkit-background-clip: text;
-width: 700px;
-  }
-  @keyframes slideIn {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-
-  
+ 
     h1 {  
       animation: slideIn 1s ease-out;
       margin-top: 10%;
@@ -314,23 +280,9 @@ width: 700px;
      padding: 30px;
      
     }
-
-/*     
-      .div-hero h2{
-        font-size: 30px;
-        text-decoration: underline;
-        color:#12c2e9;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 15px;
-        gap: 30px;
-      
-      } */
-
-      .div-hero p{
-        font-size: 25px;
+    
+  .div-hero p{
+    font-size: 25px;
 background: #12c2e9; 
 background: #aa4b6b;  
 background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  
@@ -338,187 +290,19 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
 background-clip: text;
 color: transparent;
 -webkit-background-clip: text;
-
-      }
-
-    
-        
-
-        /* butoon */
-
-        .inicio-section p{
-          text-align: center;
-          color: #fff;
-          font-size: 20px;
-          padding: 15px;
-        }
-
-        .booton{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 5%;
-          margin-bottom: 5%;
-        }
-
-        .booton-noti {
-          background: #12c2e9; 
-          background: #aa4b6b;  
-          background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  
-          background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); 
-          border:2px solid rgba(160, 157, 157, 0.14);
-          text-align: center;
-          background-clip: text;
-          color: transparent;
-          -webkit-background-clip: text;
-          font-weight: 700;
-          margin-top: 10px;
-          width: 170px;
-          padding: 8px;
-          cursor: pointer;
-        }
-        .booton-span{
-          font-size: 20px;
-          
-         }
-
-         .booton-noti:hover{
-border: #ddd;
-box-shadow: 5px 5px 10px 5px rgba(160, 157, 157, 0.14);
-         }
-
-        /* inicia secion */
-.register-we{
-  border:3px solid #578e8e;
-  border-radius: 5px;
-  background-color: #12c2e997; ;
-  color: #282828;
-  padding: 5px;
-}
-        
-.formulario-contact{
-  margin-top:7%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:90px;
-}
-
-
-.div-conteiner-form{
-  display: flex;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-   border: 2px solid  #12c2e9;
-width: 150%;
-
+width: 700px;
   }
-  .div-conteiner-form:hover{
-    box-shadow: 5px 5px 10px 5px rgba(160, 157, 157, 0.14);
-
-  }
- 
-
-form{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.input_div, .input_numero{
-display: flex;
-flex-direction: column;
-align-items: center;
- padding: 5px;
-   
-}
-
-.form-input{
-  width: 140%;
-}
-
- 
-
-form h2{
-  margin-bottom: 5%;
-  font-size: 30px;
-  color: #12c2e9 ;
- 
-}
-
-form p{
-color:#12c2e9;
-padding-top: 2%;
-}
- 
-form a{
-  color: #6b6b83;
-  text-decoration: underline;
-padding-top: 2%;
-}
-
-form input{
-   border: 2px solid #aa4b6b;
-  font-size: 20px;
-  background-color: antiquewhite;
- padding: 5px;
-}
-
-.form-enviar{
-  background: #12c2e9de; 
-  background: #aa4b6bd9;  
-  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  
-  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); 
-    background-clip: text;
-  color: transparent;
-     font-size: 20px;
-  text-align: center;
-margin-top: 20px;
-  width: 150px;
-  cursor: pointer;
-  border: none;
-  box-shadow: 5px 5px 10px 5px rgba(160, 157, 157, 0.14);
-}
-
-/* Error y valido */
-.input_div.error input {
-  border: 3px solid #dc3d35;
-}
-
-.input_div small {
-  color: #dc3d35;
-  width: 200px;
-  display: none;
-}
-
-.div-conteiner-form small{
-  color: #dc3d35;
-  font-size: 15px;
-}
-
-.input_div.valido input {
-  border: 3px solid #5dfa82cb;
-}
-
-#error.inicio {
-  color: #dc3545;
- 
-}
-
-
-.link-a{
-  font-size: 20px;
-  padding: 10px;
-
-}
-
-
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }   
+        
 
 
 /* pagina principal */
@@ -569,9 +353,18 @@ color: transparent;
     background-clip: text;
   color: transparent;
 }
+/* section-abount */
+.section-abount{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
 
 /* -------animacion de seccion hero, carrousel y abount----- */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -586,7 +379,7 @@ color: transparent;
   padding: 10px;
   }
 
- h2 {
+ .div-we h2, .soy-h2 {
   text-align: center;
   color:#12c2e9;
   font-size: 30px;
@@ -594,7 +387,8 @@ color: transparent;
 }
 
 .soy-p{
-  width: 600px;
+  text-align: center;
+ padding: 15px;
   background: #12c2e9de; 
   background: #aa4b6bd9;  
   background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  
@@ -835,6 +629,13 @@ font-size: 17px;
   color: #fff;
   
 }
+.noti-div  p{
+
+  font-size: 17px;
+    color: #fff;
+    
+  }
+  
 
 
 .noti-div{
@@ -887,8 +688,10 @@ padding: 15px;
   width: 30px;
  
 }
-.fecha-div a{
-  font-size: 18px;
+.link{
+  font-size: 20px;
+cursor: pointer;
+text-decoration: underline;
 
 }
 
@@ -905,18 +708,12 @@ color: transparent;
 cursor: pointer;
 width: 100px;
 padding: 10px;
-margin-bottom: 5%;
+margin-top: 15%;
+margin-bottom: 15%;
 border-radius: 5px;
 }
 
-/* .noti-conteiner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start; 
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-} */
+
 /* SECCION DE FORMULARIO DE CONTACTO */
 .section-form{
   display: flex;
@@ -986,6 +783,109 @@ border-radius: 5px;
   box-shadow: 5px 5px 10px 5px rgba(160, 157, 157, 0.14);
            }
 
+           .div-conteiner-form:hover{
+            box-shadow: 5px 5px 10px 5px rgba(160, 157, 157, 0.14);
+        
+          } 
+         
+        
+        form{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        
+        }
+        
+        .input_div, .input_numero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         padding: 5px;
+           
+        }
+        
+        .form-input{
+          width: 140%;
+        }
+        
+         
+        
+        form h2{
+          margin-bottom: 5%;
+          font-size: 30px;
+          color: #12c2e9 ;
+         
+        }
+        
+        form p{
+        color:#12c2e9;
+        padding-top: 2%;
+        }
+         
+        form a{
+          color: #6b6b83;
+          text-decoration: underline;
+        padding-top: 2%;
+        }
+        
+        form input{
+           border: 2px solid #aa4b6b;
+          font-size: 20px;
+          background-color: antiquewhite;
+         padding: 5px;
+        }
+        
+        .form-enviar{
+          background: #12c2e9de; 
+          background: #aa4b6bd9;  
+          background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  
+          background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); 
+            background-clip: text;
+          color: transparent;
+             font-size: 20px;
+          text-align: center;
+        margin-top: 20px;
+          width: 150px;
+          cursor: pointer;
+          border: none;
+          box-shadow: 5px 5px 10px 5px rgba(160, 157, 157, 0.14);
+        }
+        
+        /* Error y valido */
+        .input_div.error input {
+          border: 3px solid #dc3d35;
+        }
+        
+        .input_div small {
+          color: #dc3d35;
+          width: 200px;
+          display: none;
+        }
+        
+        .div-conteiner-form small{
+          color: #dc3d35;
+          font-size: 15px;
+        }
+        
+        .input_div.valido input {
+          border: 3px solid #5dfa82cb;
+        }
+        
+        #error.inicio {
+          color: #dc3545;
+         
+        }
+        
+        
+        .link-a{
+          font-size: 20px;
+          padding: 10px;
+        
+        }
+        
+        
+        
 /* ********************************** */
 /* footer */
 

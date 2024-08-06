@@ -31,24 +31,7 @@ const phoneInput = document.getElementById("phone");
 const emailInput = document.getElementById("email");
 
 
-// ******* parte del header y titulo******
 
-// traemos elemento del local
-// const usuarioActivo = JSON.parse(sessionStorage.getItem("usuarioActivo"));
-
-
-// const welcomeUser = () => {
-//     welcome.textContent = `${usuarioActivo.nombre}`;
-//   };
-
-//   const secion = () => {
-//     if (window.confirm("Estas seguro ?")) {
-//       sessionStorage.removeItem("usuarioActivo");
-//       sessionStorage()
-     
-//     }
-    
-//   };
 // ******************parte del favoritos y las noticias********
 let heartFav = JSON.parse(localStorage.getItem('heartFav')) || []
 
@@ -72,7 +55,7 @@ let guardarNotiEnLocalStorage = () => {
     <p class="p-more">${informacion}</p>
       <div class="fecha-div">
       <p>${fecha}</p>
-      <span><a href="${link}" target="_blank">Ver</a></span> 
+      <a class="link" href="${link}" target="_blank"><span>Ver</span> </a>
     
     </div>
     <div class="img.heart">
@@ -121,8 +104,13 @@ const cargarNoticias = (Noticias) => {
       
       heartFav.push(noticia);
       actualizar();
-      console.log(heartFav);
+      console.log(btnNoticias)
     }
+    // *********************************
+
+
+    
+    // ********************************
     
     const crarNotiParaFavorite = (noticia) => {
       return {
@@ -277,6 +265,7 @@ const borrarTodasLasNoticias = () => {
   guardarNotiEnLocalStorage();
   // Volver a renderizar las noticias favoritas
   renderFavNoticia();
+  window.confirm("deseas borra las noticias?")
 };
 
 
