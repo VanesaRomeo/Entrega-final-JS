@@ -210,8 +210,13 @@ height: 60px;
 ************************************************* */
  /* -----------max-width 560------------------- */
 @media (max-width:560px){
+
+    .conten-favorite {
+        padding-right:20px;
+    }
+
     .div-hero p, .soy-p{
-        width: 400px;
+        width: 350px;
         text-align: center;
     }
 
@@ -222,7 +227,7 @@ height: 60px;
       }
 
       .values{
-        width: 400px;
+        width: 350px;
         height: 200px;
       }
 
@@ -244,22 +249,27 @@ height: 60px;
       }
 
       .noti-item{
-        width: 400px;
+        width: 300px;
        display: flex;
        flex-direction: column;
        align-items: center;
        justify-content: center;
+       gap: 15px;
       }
       .noti-item p{
+        width: 300px;
         padding-right: 20px;
       }
-
+.noti-div{
+    display: flex;
+    flex-direction: column;
+}
       .noti-div img{
 width: 100px;
 height: 100px;
       }
 .noti-div h3{
-    width: 200px;
+    width: 250px;
     margin-right: 15px;
 }
 
@@ -274,12 +284,12 @@ height: 100px;
 }
 
 .btn-more{
-    margin-bottom: 15%;
+    
     cursor: pointer;
 }
 
 .div-conteinerForm{
-    width: 390px;
+    width: 350px;
   }
 
   .form-input, .input_numero{
@@ -293,151 +303,9 @@ height: 100px;
     text-align: center;
    font-size: 25px;
   }
+ footer p, a{
+    font-size: 15px;
+    padding: 10px;
+ }
 
-
-}
-
- /* @media (max-width:560px) {
-
-
-  main{
-    margin-left: 10%;
-      }
-.section-principal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-  h1{
-    width: 350px;
-    text-align: center;
-  }
-
-  .menu-toggle {
-    display: flex;
-    font-size: 20px;
-    color: antiquewhite;
-    right: 90px;
-  } 
-
-  .nav-list a, .favorite-a{
-    font-size: 20px;
-  }
-
-  header img{
-    padding-left: 10px;
-    width: 90px;
-    height: 60px;
-  }
-
-  .nav-list a:hover{
-    color: #6b6b83;
-    text-decoration:underline;
-  }
-  .favorites-container {
-    position: relative;
-    right: 15px;
-   }
-   
-   
-  .favorites-dropdown {
- right: 35px;
-    max-width: 30px;
-    
-    top: 65px;
-    right: 0;
-    padding: 25px ;
-    background: rgb(16, 16, 16);
-  border: 2px solid #6b6b83;
-  height: 90vh;
-  }
-
-    
-.favorite-item {
-  display: flex;
-  flex-direction: column;
- justify-content: center;
- align-items: center;
- width: 250px;
- 
-gap: 15px;
-}
-
-
-h1{
-  margin-top: 20%;
-}
-    .div-hero p {
-        width: 350px;
-        text-align: center;
-      }
-
-     .conteiner-form h2{
-        text-align: center;
-     }
-      
-      
-      .fecha-div{
-        display: flex;
-        justify-content: space-between;
-      }
-
-
-.soy-p{
-  width: 350px;
-}
-
-.noti-item{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-}
-.noti-item h3{
-  width: 300px;
-}
-
-.noti-div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.p-more{
-  width: 350px;
-  margin-right: 25px;
-  text-align: center;
-}
-
-.div-conteinerForm{
-  width: 350px;
-}
-
-.values{
-  width: 350px;
-  height: 200px;
-}
-
-
-
-      
-   
-   footer{
-    width: 100%;
-   }
-      
-      footer img{
-      
-        width: 100px;
-        height: 60px;
-      }
-      footer p, .footer-a{
-        color: #12c2e9;
-        font-size: 15px;
-        padding: 15px;
-      }
- } */
+}}

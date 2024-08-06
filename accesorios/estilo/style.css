@@ -291,7 +291,9 @@ background-clip: text;
 color: transparent;
 -webkit-background-clip: text;
 width: 700px;
+animation: fadeIn 2s ease-in-out;
   }
+
   @keyframes slideIn {
     from {
       transform: translateX(-100%);
@@ -305,7 +307,6 @@ width: 700px;
         
 
 
-/* pagina principal */
 
 .firt-pag{
   display: flex;
@@ -708,8 +709,8 @@ color: transparent;
 cursor: pointer;
 width: 100px;
 padding: 10px;
-margin-top: 15%;
-margin-bottom: 15%;
+margin-top: 8%;
+margin-bottom: 10%;
 border-radius: 5px;
 }
 
