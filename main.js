@@ -55,7 +55,7 @@ let guardarNotiEnLocalStorage = () => {
     <p class="p-more">${informacion}</p>
       <div class="fecha-div">
       <p>${fecha}</p>
-      <a class="link" href="${link}" target="_blank"><span>Ver</span> </a>
+      <a class="link" href="${link}" target="_blank"><span>ir</span> </a>
     
     </div>
     <div class="img.heart">
@@ -240,10 +240,23 @@ const actualizar = () => {
 
 
 // borrar solo la tarjeta
+
+
+// const btnDelete = document.querySelector(".btn-delete");
+
+const actualizarEstadoBotonDelete = () => {
+  if (heartFav.length === 0) {
+    btnDelete.disabled = true;
+  } else {
+    btnDelete.disabled = false;
+  }
+};
+
 contenedorFav.addEventListener("click", (event) => {
   if (event.target.closest(".btn-closed")) {
     const numero = event.target.closest(".btn-closed").dataset.numero;
     borrarNoticia(numero);
+    actualizarEstadoBotonDelete();
   }
 });
 
@@ -254,19 +267,32 @@ const borrarNoticia = (numero) => {
   guardarNotiEnLocalStorage();
   // Vuelve a renderizar las noticias favoritas
   renderFavNoticia();
+  actualizarEstadoBotonDelete();
 };
 
-// borramos todas las noticias del contenedor
-
 const borrarTodasLasNoticias = () => {
+  if (heartFav.length === 0) return; // No hace nada si no hay noticias
+
+  // Confirmar antes de borrar todas las noticias
+  const confirmacion = window.confirm("¿Deseas borrar todas las noticias?");
+  if (!confirmacion) return;
+
+ 
   // Vaciar el array de favoritos
   heartFav = [];
   // Actualizar el localStorage
   guardarNotiEnLocalStorage();
   // Volver a renderizar las noticias favoritas
   renderFavNoticia();
-  window.confirm("deseas borra las noticias?")
+  actualizarEstadoBotonDelete(); 
+  window.confirm("desea borrar todas las noticias?")
 };
+
+
+
+// Llamar a la función para establecer el estado inicial del botón
+
+
 
 
 
@@ -471,6 +497,7 @@ window.addEventListener('scroll',  closedMenuYFavorite)
 
 
 botonVaciarFavoritos.addEventListener("click", borrarTodasLasNoticias);
+actualizarEstadoBotonDelete();
 renderFavNoticia();
 // --------------------------------------
 // --------- formulario-----------
