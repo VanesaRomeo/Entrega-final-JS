@@ -231,39 +231,7 @@ color: transparent;
   cursor: pointer;
   
 }
-/* -------------------------------------------- */
-.custom-confirm {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.3s;
-}
-.custom-confirm.active {
-  visibility: visible;
-  opacity: 1;
-}
-.custom-confirm-content {
-  background-color: #ffffff2f;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-}
-.custom-confirm-buttons {
-  margin-top: 20px;
-}
-.custom-confirm-buttons button {
-  margin: 0 10px;
-}
-/* -------------------------------- */
+
 
 .favorite-btn{
 

@@ -236,27 +236,18 @@ const actualizar = () => {
 
 
  
-//  para borrar noticias 
+// --------- para borrar noticias --------------
 
 
 // borrar solo la tarjeta
 
 
-// const btnDelete = document.querySelector(".btn-delete");
-
-const actualizarEstadoBotonDelete = () => {
-  if (heartFav.length === 0) {
-    btnDelete.disabled = true;
-  } else {
-    btnDelete.disabled = false;
-  }
-};
 
 contenedorFav.addEventListener("click", (event) => {
   if (event.target.closest(".btn-closed")) {
     const numero = event.target.closest(".btn-closed").dataset.numero;
     borrarNoticia(numero);
-    actualizarEstadoBotonDelete();
+   
   }
 });
 
@@ -267,30 +258,24 @@ const borrarNoticia = (numero) => {
   guardarNotiEnLocalStorage();
   // Vuelve a renderizar las noticias favoritas
   renderFavNoticia();
-  actualizarEstadoBotonDelete();
+  
 };
-
+// borrar toda el carrito
 const borrarTodasLasNoticias = () => {
   if (heartFav.length === 0) return; // No hace nada si no hay noticias
 
-  // Confirmar antes de borrar todas las noticias
-  const confirmacion = window.confirm("¿Deseas borrar todas las noticias?");
-  if (!confirmacion) return;
-
- 
   // Vaciar el array de favoritos
   heartFav = [];
   // Actualizar el localStorage
   guardarNotiEnLocalStorage();
   // Volver a renderizar las noticias favoritas
   renderFavNoticia();
-  actualizarEstadoBotonDelete(); 
+  
   window.confirm("desea borrar todas las noticias?")
 };
 
 
 
-// Llamar a la función para establecer el estado inicial del botón
 
 
 
@@ -497,7 +482,7 @@ window.addEventListener('scroll',  closedMenuYFavorite)
 
 
 botonVaciarFavoritos.addEventListener("click", borrarTodasLasNoticias);
-actualizarEstadoBotonDelete();
+// actualizarEstadoBotonDelete();
 renderFavNoticia();
 // --------------------------------------
 // --------- formulario-----------
@@ -512,8 +497,3 @@ Formregistro.addEventListener('submit', formValid)
 }
 
 init()
-
-// const initNoticias = () =>{
-// initSeccionNoti()
-// }
-// initNoticias()
